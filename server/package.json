@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env lib/index.ts",
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/jwt": "^9.0.0",
+    "@fastify/multipart": "^9.4.0",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^9.2.2",
+    "fastify": "^5.7.2",
+    "socket.io": "^4.8.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.19.30",
+    "tsx": "^4.6.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  }
+}
